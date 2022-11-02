@@ -20,11 +20,11 @@
 
     terminal_font:
       family: "Iosevka Fixed Slab"
-      size: 14
+      size: 18
 
     vscode_font:
       family: "Iosevka Slab Light"
-      size: 14
+      size: 18
       ligatures:
         - zero
         - ss01
@@ -32,11 +32,7 @@
         - ss08
         # - "'calt' on"
     vscode_settings:
-      "editor.cursorBlinking": "solid"
       "editor.formatOnSave": true
-      "editor.tabCompletion": "on"
-      "workbench.fontAliasing": "antialiased"
-      "terminal.integrated.fontSize": 12
 
     vscode_feature_set:
       - go
