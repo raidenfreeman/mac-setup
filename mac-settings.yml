@@ -83,6 +83,12 @@
         key: KeyRepeat
         type: int
         value: 10
+    # Control Centre configuration
+    controlcenter_domain:
+      - domain: com.apple.controlcenter
+        key: "NSStatusItem Preferred Position Bluetooth"
+        type: int
+        value: 309
 
   tasks:
     - name: Sane configuration settings
@@ -97,6 +103,7 @@
         + dock_domain
         + trackpad_domain
         + nsgglobal_domain
+        + 
       }}"
 
     - name: Use subpixel font smoothing
