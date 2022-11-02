@@ -5,26 +5,25 @@
       - homebrew/cask
       - homebrew/cask-fonts
     casks:
-      # amethyst and spectacle help with keyboard window arrangement.
-      # Use one or the other.
-      - amethyst
-      - spectacle
+      # Window manager
+      - rectangle
       # RDM allows switching between screen resolution easily.
       - avibrazil-rdm
       # Popular browsers
+      - brave-browser
       - firefox
       - google-chrome
       # GUI archiver
       - keka
-      - vlc
-      # Communication tools
-      - slack
-      - zoom
-
-    graphics:
-      - handbrake
-      - gimp
-      - darktable
+      # image optimization tools
+      - imageoptim
+      - imagealpha
+      - spotify
+      - spotify-now-playing
+      # Clipboard manager
+      - maccy
+      # Drawing app
+      - krita
 
   tasks:
     - name: Register taps
