@@ -15,6 +15,7 @@
       - tmuxinator
       - vim
       - zsh
+      - imageoptim-cli
 
     ohmyzsh:
       theme: gnzh
