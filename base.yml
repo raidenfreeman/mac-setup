@@ -79,15 +79,6 @@
         name: "{{ ansible_user_id }}"
         shell: "/usr/local/bin/zsh"
 
-    - name: Allow no-prompt sudo
-      become: yes
-      copy:
-        dest: "/private/etc/sudoers.d/{{ username }}"
-        owner: root
-        mode: "u=rw,g=,o="
-        content: |
-          {{ username }}    ALL = (ALL) NOPASSWD: ALL
-
     - name: Install znap
       block:
         - name: Clone znap repo
