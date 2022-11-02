@@ -24,6 +24,8 @@
       - maccy
       # Drawing app
       - krita
+      # Screen capture
+      - kap
 
   tasks:
     - name: Register taps
