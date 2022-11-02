@@ -10,8 +10,8 @@
       - git-lfs
       - golang
       - gotop
-      - helm
-      - hyperkit
+      # - helm
+      # - hyperkit
       - kubectl
       - python
 
