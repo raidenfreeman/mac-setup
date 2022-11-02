@@ -17,6 +17,7 @@
       # - virtualbox
       # - virtualbox-extension-pack
       - visual-studio-code
+      - jetbrains-toolbox
 
     terminal_font:
       family: "Iosevka Fixed Slab"
