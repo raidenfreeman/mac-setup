@@ -6,20 +6,14 @@
     casks:
       # GPU accelerated terminal
       - alacritty
-      # Universal Database GUI
-      - dbeaver-community
-      # Diagramming tool
-      - drawio
       # Good monospace fonts for code
       - font-go-mono-nerd-font
       - font-iosevka-slab
       - font-juliamono
       # Merge tool for git
       - meld
-      # Quick way to create ubuntu VMs
-      - multipass
       - postman
-      - slack
+      # - slack
       # - virtualbox
       # - virtualbox-extension-pack
       - visual-studio-code
