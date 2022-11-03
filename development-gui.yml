@@ -120,6 +120,7 @@
       homebrew_cask:
         name: "{{ casks }}"
         state: present
+        accept_external_apps: true
 
     - name: Deploy Alacritty configuration
       block:

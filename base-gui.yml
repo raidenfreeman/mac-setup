@@ -39,3 +39,4 @@
       community.general.homebrew_cask:
         name: "{{ casks }}"
         state: present
+        accept_external_apps: true
