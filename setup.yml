@@ -8,3 +8,12 @@
 - import_playbook: mac-settings.yml
 - import_playbook: development.yml
 - import_playbook: development-gui.yml
+
+  tasks:
+    - name: Notify about IDEs
+      shell: |
+        echo '\n
+        == Done ==
+        \n\n
+        ⚠️  Unfortunately you have to install the Jetbrains IDEs manually  ⚠️
+        ⚠️  from toolbox, since there is no command line interface.        ⚠️'
