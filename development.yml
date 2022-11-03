@@ -10,6 +10,7 @@
       - git-lfs
       - golang
       - gotop
+      - tldr
       # - helm
       # - hyperkit
       - kubectl

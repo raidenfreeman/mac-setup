@@ -18,6 +18,7 @@
       # - virtualbox-extension-pack
       - visual-studio-code
       - jetbrains-toolbox
+      - postman
 
     terminal_font:
       family: "Iosevka Fixed Slab"
