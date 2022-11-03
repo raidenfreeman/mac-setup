@@ -29,7 +29,6 @@ function installAnsible() {
   fi
 }
 
-echo "PATH="$PATH
 export PATH=$PATH:/opt/homebrew/bin
 
 installXcodeCLI
