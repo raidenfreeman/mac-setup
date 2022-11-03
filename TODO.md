@@ -2,3 +2,5 @@
 * Open login URLs (eg if it's necessary to create an account during onboarding)
 * Ask if user wants cli tools or just the gui tools
 * Ask which cli tools the user wants, look them up on homebrew and if they exist & are not abandoned, install them
+* Make a meta-generator script
+* "Extract name and email" in development.yml crashes because variables are undefined 
