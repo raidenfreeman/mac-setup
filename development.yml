@@ -2,6 +2,9 @@
 - hosts: mac
   gather_facts: yes
   vars:
+    taps:
+      - Azure/kubelogin
+      - hashicorp/tap
     pkgs:
       - dive
       - fzf
@@ -14,6 +17,10 @@
       - kubectl
       - python
       - git-crypt
+      - azure-cli
+      - kubernetes-cli
+      - Azure/kubelogin/kubelogin
+      - hashicorp/tap/vault
 
     global_config:
       core.editor: "vim"
@@ -40,6 +47,12 @@
       mergetool.meld.cmd: "meld $LOCAL $MERGED $REMOTE --output $MERGED"
 
   tasks:
+    - name: Register extra taps
+      community.general.homebrew_tap:
+        name: "{{ item }}"
+        state: present
+      with_items: "{{ taps }}"
+
     - name: Install development packages
       homebrew:
         name: "{{ pkgs }}"
