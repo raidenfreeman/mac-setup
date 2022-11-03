@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -euo pipefail
-
 function installXcodeCLI() {
   xcode-select -p 1>/dev/null
   isXcodeInstalled=$?
