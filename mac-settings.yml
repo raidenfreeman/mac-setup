@@ -83,12 +83,12 @@
         key: KeyRepeat
         type: int
         value: 10
-    # Control Centre configuration
+    # Control Centre configuration - Show Bluetooth icon in menu bar
     controlcenter_domain:
       - domain: com.apple.controlcenter
-        key: "NSStatusItem Preferred Position Bluetooth"
+        key: "NSStatusItem Visible Bluetooth"
         type: int
-        value: 309
+        value: 1
 
   tasks:
     - name: Sane configuration settings
