@@ -7,6 +7,7 @@
 - import_playbook: base-gui.yml
 - import_playbook: mac-settings.yml
 - import_playbook: development.yml
+- import_playbook: node.yml
 - import_playbook: development-gui.yml
 
 - hosts: mac

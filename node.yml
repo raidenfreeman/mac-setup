@@ -1,0 +1,22 @@
+---
+- hosts: mac
+  gather_facts: yes
+  tasks:
+    - name: Install Node
+      vars:
+        node_version: 16
+      block:
+        - name: Install nvm & Node JS
+          ansible.builtin.shell: >
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | NODE_VERSION="{{node_version}}" bash
+            export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+            [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+          args:
+            creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+        - name: Install angular cli
+          shell: |
+            if ! command -v ng &> /dev/null
+            then
+              npm i -g @angular/cli
+            fi
