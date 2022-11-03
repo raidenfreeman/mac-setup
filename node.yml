@@ -7,7 +7,7 @@
         node_version: 16
       block:
         - name: Install nvm & Node JS
-          ansible.builtin.shell: >
+          ansible.builtin.shell: |
             curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | NODE_VERSION="{{node_version}}" bash
             export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
