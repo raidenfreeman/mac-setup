@@ -27,6 +27,7 @@
       # Screen capture
       - kap
       - keybase
+      - discord
 
   tasks:
     - name: Register taps
