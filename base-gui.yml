@@ -26,6 +26,7 @@
       - krita
       # Screen capture
       - kap
+      - keybase
 
   tasks:
     - name: Register taps

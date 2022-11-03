@@ -11,10 +11,9 @@
       - golang
       - gotop
       - tldr
-      # - helm
-      # - hyperkit
       - kubectl
       - python
+      - git-crypt
 
     global_config:
       core.editor: "vim"
