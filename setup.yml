@@ -9,6 +9,8 @@
 - import_playbook: development.yml
 - import_playbook: development-gui.yml
 
+- hosts: mac
+  gather_facts: yes
   tasks:
     - name: Notify about IDEs
       shell: |
