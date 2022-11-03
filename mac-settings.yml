@@ -103,7 +103,7 @@
         + dock_domain
         + trackpad_domain
         + nsgglobal_domain
-        + 
+        + controlcenter_domain
       }}"
 
     - name: Use subpixel font smoothing
