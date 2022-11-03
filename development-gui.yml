@@ -7,9 +7,9 @@
       # GPU accelerated terminal
       - alacritty
       # Good monospace fonts for code
-      - font-go-mono-nerd-font
-      - font-iosevka-slab
-      - font-juliamono
+      - homebrew/cask-fonts/font-go-mono-nerd-font
+      - homebrew/cask-fonts/font-iosevka-slab
+      - homebrew/cask-fonts/font-juliamono
       # Merge tool for git
       - meld
       - postman
