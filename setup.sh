@@ -40,6 +40,7 @@ pushd $SCRIPT_DIR
 
 echo "Installing galaxy collections"
 ansible-galaxy collection install community.general
+ansible-galaxy collection install drew1kun.fancyfonts
 
 echo "Installing tools"
 sudo -n true
