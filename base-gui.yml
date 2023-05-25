@@ -7,6 +7,8 @@
     casks:
       # Window manager
       - rectangle
+      # Change Fn per application
+      - fluor
       # RDM allows switching between screen resolution easily.
       - avibrazil-rdm
       # Popular browsers
